@@ -1,2 +1,12 @@
-benchmarks.csv
-regression.csv
+_build/
+benchmarks/*.csv
+*.csv
+*.swp
+.DS_Store
+.vscode/
+.idea/
+
+
+
+
+
