@@ -1,4 +1,6 @@
 (* benchmark_framework.ml *)
+open Comparative_benchmarks
+open Benchmark_report
 
 module Timer = struct
   let time f x =
@@ -142,3 +144,13 @@ let () =
   List.iter BenchmarkSuite.print_result results;
   BenchmarkSuite.write_csv "benchmarks.csv" results;
   BenchmarkSuite.write_regression_summary "regression.csv" results
+
+let () =
+  run_comparative_benchmarks ();
+  run_benchmark_report ()
+open Comparative_benchmarks
+open Benchmark_report
+
+let () =
+  run_comparative_benchmarks ();
+  run_benchmark_report ()

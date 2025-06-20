@@ -1,0 +1,4 @@
+(executable
+ (name benchmark)
+ (modules benchmark test_data_generator validation_benchmarks Comparative_benchmarks benchmark_report Benchmark_suite)
+ (libraries unix))
